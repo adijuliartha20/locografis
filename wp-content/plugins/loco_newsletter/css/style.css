@@ -1,0 +1,12 @@
+.metabox-holder-full{width: 100%;}
+.form-action input[type=text]{padding: 3px 8px;font-size: 1.7em;line-height: 100%;height: 1.7em;width: 100%;outline: 0;}
+.form-action select{padding: 3px 8px; min-width: 200px; max-width: 90%;}
+
+.form-action-mini {max-width: 800px; width: 100%;}
+.text-full{width: 100%;}
+.text-half {width: calc(50% - 20px);display: inline-block;}
+.text-half-last {margin-left: 17px;width: calc(50% - 4px);}
+
+.form-action-mini input,
+.form-action-mini select
+{height: 2.5em;}

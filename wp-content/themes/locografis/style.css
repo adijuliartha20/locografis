@@ -1,0 +1,643 @@
+/*
+Theme Name: Loco Grafis
+Theme URI: http://locografis.com
+Author: the Loco Grafis team
+Author URI: http://locografis.com
+Description: 
+Version: 1.7
+License: 
+License URI: 
+*/
+
+
+@import 'standardize.css';
+/*Default Start*/
+body{font-family: 'Lato', sans-serif;font-size:14px;color:#333333;}
+.section {width: 100%;height: 100vh;background:#fff;position: relative;overflow: hidden;}
+.wrap-slide{position:relative;overflow:hidden}
+
+.mobilenav{display: none;}
+/*
+.icon{display: none;}*/
+
+h1{font-size: 43px;}
+h1 strong{font-weight:700}
+h1.custom-h1{font-size: 32px;font-weight:700;text-align:center;text-transform:uppercase;line-height: 140%;}
+h1.custom-h1 span{font-weight:300}
+h4{font-weight:700;margin-bottom:15px}
+
+em{font-style:italic}
+
+table td{vertical-align:top}
+strong{font-weight:700}
+ol li{list-style-type:decimal;padding-left:10px;line-height:140%;position:relative}
+ol{margin-left:20px}
+ol li br {line-height: 220%;}
+.middle{width: 66.67%;max-width: 66.67%;margin-left:auto;margin-right:auto;position:relative;}
+
+.error{border-color:red!important}
+.hide{display: none !important;}
+/*.content {min-height: 100vh;}*/
+.content-yellow {background-color: #FFD36A;}
+.content-gray {background-color: #EEEEEE;}
+.content-white {background-color: #ffffff;}
+
+.btn-black{display:table;background:#333;color:#fff;padding: 11px 45px;border-radius:21px;font-size: 18px;}
+.orange{color:#FFD457}
+.link_orange{display:table;font-weight:600;padding-bottom:5px;border-bottom:solid 2px #ffd36a}
+
+/*.overlay{position:absolute;top:0;right:0;left:0;bottom:0;background-color:rgba(255,255,255,0.1);background-image:url(images/loader.gif);background-repeat:no-repeat;background-position:center; display: none;opacity: 1}*/
+.overlay{position:absolute;top:0;right:0;left:0;bottom:0;background-color:#eee;background-image:url(images/loader.gif);background-repeat:no-repeat;background-position:center; display: none;opacity: 0.8}
+
+._select{width: 100%;}
+._input{width: 100%;}
+._input{border-bottom:solid 1px #eee;height: 60px;/* margin-bottom:5px; */padding-left: 3px;padding-right: 5px;}
+._textarea{border-bottom:solid 1px #eee;height:120px;width:100%;margin-top:20px;margin-bottom:20px}
+.g-recaptcha{margin-bottom:20px}
+.field {margin-bottom: 10px;}
+.notify {color: red;margin-top: 20px;}
+.pos-relative{position: relative;}
+.pos-absolute{position: absolute;}
+
+.content{font-size:16px;padding-top: 70px;}
+/*Default End*/
+/*Header Start*/
+.header {padding: 0 6%;height: 70px;border-bottom: solid 1px #F4F4F4;position: fixed;z-index: 3;background: #fff;width: 100%;top: 0;}
+.logo-header{width: 212px;margin: 27px 0 0 0;display:block;background-image: url('images/Icon_logo-yellow.svg');background-repeat: no-repeat;height: 15px;background-position: center;background-size: 212px;}
+.header .middle{position:relative}
+.menu-header-container{float:right;margin-top:29px;/* margin-right: 70px; */}
+.menu-header-container ul li{display:inline-block;margin-left:30px;height: 25px;}
+a{color:#333}
+.menu-header-container ul li a{font-size:16px;color:#777}
+.sosmed-header li{display:inline-block;margin-left:20px}
+.sosmed-header li:first-child{margin-left:70px;}
+.sosmed-header{/* padding-left: 70px; */margin-top: 23px;}
+
+.logo-white {display: none;}
+.menu-header {display: table;width: 390px;}
+.sosmed-header-table {display: table; width: 130px;}
+
+.state-menu-transparent .header {background: rgba(255,255,255,0); border-color: rgba(244, 244, 244, 0);}
+.state-menu-transparent .logo-header{background-image: url('images/Icon_logo-white.svg');transition: background-image 600ms cubic-bezier(.75,0,.29,1.01);/* background-size: contain; */}
+.state-menu-transparent .sosmed-header{/* display:none; */width: 0;overflow: hidden;transition: width 600ms;}
+.state-menu-transparent .menu-header-container{width: 102px;overflow: hidden;transition: width 600ms;}
+.state-menu-transparent .menu-header-container ul li a {color: #fff;padding-bottom: 5px;border-bottom: solid 2px rgba(255, 255, 255, 0.46);border-width: 2px;transition: color 300ms, border-color 300ms;}
+.state-menu-transparent .menu-header-container ul li a span:after {content: '.';font-weight: 700;}
+
+
+.state-menu-transparent.white-state-header {}
+.state-menu-transparent.white-state-header .logo-header {background-image: url('images/Icon_logo-yellow.svg');}
+.state-menu-transparent.white-state-header .menu-header-container ul li a {color: #777; border-color: rgba(255, 255, 255, 0);}
+.state-menu-transparent.white-state-header .menu-header-container ul li a span:after{opacity:0;}
+.state-menu-transparent.white-state-header .menu-header-container {width: 370px;}
+.state-menu-transparent.white-state-header .sosmed-header {width: 130px;}
+
+.menu-mobile{display: none;}
+/*Header End*/
+/*Slide Start*/
+.slide{height:100vh;width: 100%;}
+.vegas-wrapper {background: rgba(0,0,0,0.4);}
+.wrap-slide .right-triangle-bottom {bottom: -50px;height: 80px;}
+.logo-slide {position: absolute; z-index: 1;width: 212px; left: 6%; top: 45px;}
+.menu-slide-container{position:absolute;z-index:1;right:6%;top:45px;display: none;}
+.menu-slide-container a{color:#fff;font-size:16px;font-family:Arial,Lato;font-weight:400;border-bottom:solid 2px #fff;line-height:120%;padding-bottom:4px}
+
+.sosmed-slide{position:absolute;z-index:1;bottom:35px;left:6%}
+.sosmed-slide li{display:inline-block;width: 26px;height: 26px;margin-right:15px;background-color: #fff;border-radius: 26px;}
+.sosmed-slide li img{display:block;max-width:100%}
+.link-facebook img{width:7px;margin-left:9px;margin-top:6px}
+.link-instagram img{width:14px;margin-left:6px;margin-top:6px}
+.scroll-down-slide{position:absolute;z-index:1;width:20px;bottom:35px;right:6%;display: none;}
+
+.brief-slide p:first-child{font-size:30px;font-weight:300;margin-bottom:40px;line-height:130%}
+.brief-slide{color:#fff;position:absolute;top:50%;left:15%;z-index:1;width:510px;margin-top:-100px}
+.brief-slide p a{display:block;width:170px;height:44px;background: transparent;font-size:18px;line-height:44px;color:#fff;text-align:center;border-radius:22px;border: solid 1px #F5B756;transition: background 300ms;}
+.brief-slide p a:hover {background: #F5B756;}
+/*Slide End*/
+/*Home Start*/
+.container-title-portofolio{padding-top:125px}
+.list-portofolio{margin-top:40px}
+.item-portofolio{width:calc(50% - 41px);margin-top:75px;-moz-box-shadow: 8px 10px 23px 0px rgba(0, 0, 0, 0.11);-webkit-box-shadow: 8px 10px 23px 0px rgba(0, 0, 0, 0.11);box-shadow: 8px 10px 23px 0px rgba(0, 0, 0, 0.11);}
+.item-portofolio:nth-child(2n+1){margin-right:81px}
+.item-portofolio:nth-child(1),.item-portofolio:nth-child(2){margin-top:0}
+.bg{width:100%;height:300px;background-repeat:no-repeat;background-size:cover;background-position:center}
+.item-brief{background:#fff;height:95px;padding:0 40px}
+.item-brief h2{font-size:22px;padding-top: 25px;color: #ff9d00;}
+.list-category{margin-top:10px}
+.list-category li{display:inline-block;}
+.list-category li a{font-size:16px;font-weight:300}
+.link-detail {width: 22px; margin-top: 12px;}
+.show-all-portofolio {margin: 70px auto 0;}
+.content-portofolio {padding-bottom: 55px;}
+.list-category-desktop {bottom: 21px;left: 40px;/* z-index:2; */}
+.content-portofolio-home {padding-top: 0px;}
+/*Home End*/
+/*Portofolio Start*/
+.content-portofolio.content-gray {padding-bottom: 120px;}
+.filter-portofolio li{display:inline-block}
+.filter-portofolio{margin-top:24px}
+.filter-portofolio li button{font-size:16px}
+.current-state {color: #F3B300; font-weight: 700;}
+.container-portfolio-block{position:relative}
+.content-intersting.content-yellow{height:220px}
+.content-intersting p:first-child{font-size:34px;padding-top:64px;font-weight:300;margin-bottom:30px}
+.content-intersting p a{display:table;margin:0 auto}
+
+.title-portofolio-single{font-weight:700;padding-top:105px}
+.list-category-single a{color:#888}
+.list-category-single{margin-bottom:25px}
+.brief-portofolio{font-size:16px;font-weight:300;line-height:120%;max-width:605px;margin-bottom:50px}
+.year-link{font-weight:400;margin-bottom:25px}
+.link_website {border-bottom: solid 2px #FFD457; padding-bottom: 5px;}
+.list-image-portofolio{margin-left:6%;margin-right:6%}
+.gallery-columns-2 .gallery-item{width:50%;float:left}
+
+.nav-n-share{margin:20px 6% 85px}
+.prev-next li{display:inline-block}
+.prev-next li a{font-size:0;width: 22px;height: 25px;background:url('images/Icon_arrow-right-porofolio0detail.svg')no-repeat;display:table;background-position: center;margin-right: 15px;float: left;}
+.prev a {transform: rotate(180deg); margin-top: 0px;}
+
+.gallery {margin-top: 17px;}
+.gallery:first-child {margin-top: 0px;}
+.gallery:after {content: '';clear: both;display: block;}
+.gallery-item + br { display: none; }
+/*Portofolio End*/
+/*About Start*/
+.content-page h1{font-size:34px;max-width:662px;margin:0 auto;padding-top:100px;padding-bottom:50px;text-align:center;font-weight:300;line-height:120%}
+.content-page h1 strong {font-weight: 400;}
+.content-page.content-tentang-kami h1{text-align:left}
+.content-page{line-height:120%;font-size:16px;font-weight: 300;}
+.middle-small{width:46%;margin:0 auto}
+.content-page p{margin-bottom:20px}
+.table-jasa-kami{margin-top:105px;padding:70px 0 85px}
+.content-page h2{font-size:28px;font-weight:600;margin-bottom:20px}
+.table-jasa-kami h2{margin-bottom: 35px;}
+
+.table-detail-jasa-kami{border-radius:10px}
+.table-detail-jasa-kami td{width:50%;padding:60px 80px}
+.table-detail-jasa-kami td:first-child{border-right:solid 1px #eee}
+.table-detail-jasa-kami h3{font-weight: 700;font-size:18px;margin-bottom: 25px;}
+.table-detail-jasa-kami ul li{list-style:none;padding-left: 30px;font-weight:300;margin-bottom:10px;background-image: url(images/Icon_centang.svg);background-repeat: no-repeat;background-position: left center;background-size: 18px;}
+.table-detail-jasa-kami ul li:last-child{margin-bottom:0}
+/*About End*/
+/*Contact Start*/
+.content-contact h1{text-align:center;font-size:28px;padding:97px 0 57px;font-weight:700}
+.container-form-contact{border-radius:20px;font-size: 16px;}
+.content-contact{padding-bottom:115px}
+.form-contact{width: 62%;border-right:solid 1px #eee;min-height:600px;padding: 45px 60px 40px 70px;}
+
+.select2-container .select2-selection--single{height: 55px;}
+.select2-container--default .select2-selection--single{border-radius:0;border: none;border-bottom: solid 2px #FFD457;}
+.select2-container--default .select2-selection--single .select2-selection__rendered{line-height: 55px;font-size: 20px;}
+.select2-container--default .select2-selection--single .select2-selection__arrow{height:50px;width:50px}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{border-width: 10px 8px 0 8px;margin-top: 1px;border: none;background: url(images/Icon_kontactus-arrow-dropdown-pilihjasa.svg) no-repeat;width: 18px;height: 8px;}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {border-width: 0 8px 10px 8px;border-color: transparent transparent #95989a transparent;border: none;transform: rotate(180deg);}
+._select.error+.select2-container--default .select2-selection--single{border-color:red!important}
+.select2-dropdown {border-color: #ffd36a;}
+
+.info-contact{width:38%;position: relative;}
+.detail-info-contact{padding:80px 45px 0;line-height: 140%;font-weight: 300;}
+.label-jam{font-size:18px;font-weight:700;line-height:140%;margin-bottom:10px;display:block}
+
+.detail-info-contact em{font-weight:300}
+.li-phone img{width:18px;margin-right:15px;margin-top:2px}
+.ul-contact-info{margin-top:25px;margin-bottom:25px}
+.li-email img{width:19px;margin-right:15px;margin-top:4px}
+.ul-contact-info li{margin-bottom:10px}
+.detail-info-contact label{font-weight:700;margin-bottom:10px;display:block}
+.map {width: 100%;height: calc(100% - 420px); position: absolute; bottom: 0; background: #eee; border-radius: 0 0 20px 0;}
+/*Contact End*/
+/*Footer Start*/
+.footer {height: 255px;padding-left: 6%;padding-right: 6%;padding-top: 80px;font-size: 16px;font-weight: 300;line-height: 140%;}
+.footer h3{font-weight:700;margin-bottom:7px}
+.footer-1{width:26.5%}
+.footer-1 p{margin-left:16px}
+.footer-3{width:46.47%}
+.footer-3 p{font-size:22px;margin-bottom:20px;line-height:130%}
+/*Footer End*/ 
+
+@media screen and (max-width: 1440px){
+	/*Default Start*/
+	/*Default End*/
+	/*Header Start*/
+	/*Header End*/
+	/*Slide Start*/
+	/*Slide End*/
+	/*About Start*/
+	/*About End*/
+	/*Portofolio Start*/
+	.bg{height:260px;}
+	/*Portofolio End*/
+	/*Package Start*/
+	/*Package End*/
+	/*Term Start*/
+	/*Term End*/
+	/*FAQ Start*/
+	/*FAQ End*/
+	/*Contact Start*/
+	/*Contact End*/
+	/*Footer Start*/
+	/*Footer End*/ 
+}
+
+@media screen and (max-width: 1366px){
+	/*Default Start*/
+	/*Default End*/
+	/*Header Start*/
+	/*Header End*/
+	/*Slide Start*/
+	/*Slide End*/
+	/*About Start*/
+	/*About End*/
+	/*Portofolio Start*/
+	/*Portofolio End*/
+	/*Package Start*/
+	/*Package End*/
+	/*Term Start*/
+	/*Term End*/
+	/*FAQ Start*/
+	/*FAQ End*/
+	/*Contact Start*/
+	/*Contact End*/
+	/*Footer Start*/
+	/*Footer End*/ 
+}
+
+
+@media screen and (max-width: 1024px){
+	/*Default Start*/
+	h1{font-size:38px}
+	/*Default End*/
+	/*Header Start*/
+	.header{padding:0 10%}	
+	.menu-header-container {display: none;}
+	.menu-mobile{display: block;margin-top: 22px;padding-left: 25px;margin-left: 25px;border-left: solid 1px #DDDDDD;}
+	
+	.hamburger {position: relative;}
+	*{ -webkit-tap-highlight-color:rgba(0,0,0,0);  -webkit-tap-highlight-color:transparent}
+	.top-animate{top: 8px !important;-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+	.mid-animate{opacity:0}
+	.bottom-animate{top: 8px !important;-webkit-transform:rotate(-225deg);transform:rotate(-225deg);}
+	.top-menu{top: 0;}
+	.mid-menu{top: 8px;}
+	.bottom-menu{top: 16px;}
+	.menui{background: #777777;transition:0.6s ease;transition-timing-function:cubic-bezier(.75,0,.29,1.01);margin-top: 4px;position:absolute;width: 26px;height: 2px;border-radius: 0px;}	
+	.icon{padding: 0px;height: 28px;width: 28px;margin-top: 0;display: block;}
+
+	.mobilenav{top: 0;left:0;z-index: 2;position:fixed;width:100%;height: 100%;background: rgb(245, 183, 86);overflow: auto;}
+	.middle-mv{display:table;height:100%;width:100%}
+	.mobilenav .center{display:table-cell;vertical-align:middle;margin-top: 70px;padding-top: 40px;}
+	.mobilenav .center ul li{padding: 20px 0;text-align:center;height: auto;margin-left: 0;}
+	.mobilenav .center ul li a{font-weight: 400;color: #fff !important;font-size: 16px;text-transform: uppercase;padding: 5px;border-bottom: solid 2px rgba(255, 255, 255, 0);}
+	.mobilenav .menu-header-container {display: block;float: none;}
+	.mobile-menu li {display: block !important;}
+	.state-menu-transparent .mobilenav .menu-header-container ul li {display: block;}
+	.state-menu-transparent .mobilenav .menu-header-container {display: block;margin: 0;width: auto !important;}
+	.state-menu-transparent .mobilenav .menu-header-container ul li a span:after{content:'';}
+
+	.sosmed-header li:first-child{/* margin-left:0 */}
+	.sosmed-header-table{/* width:auto */}
+	.state-menu-transparent .menu-mobile {width: 0;overflow: hidden;border-width: 0;transition: width 600ms, border-width 600ms, padding-left 600ms, margin-left 600ms;padding-left: 0px;margin-left: 0px;}
+	.state-menu-transparent.white-state-header .menu-mobile {width: 51px;border-width: 1px;padding-left: 25px;margin-left: 25px;}
+	.state-menu-transparent .menu-header-container {display: block;}
+	.state-menu-transparent.white-state-header .menu-header-container {width: 0px;}
+
+	.sosmed-mobile-table li{display:inline-block;background:#fff;padding:0!important;margin:0 7px!important;border-radius:24px;height:26px!important;width:26px}
+	.sosmed-mobile-table{display:table;margin:0 auto}
+	.sosmed-mobile{width:200px;margin:40px auto 0;border-top:solid 1px #fff;padding-top:25px;display: none;}
+	.sosmed-mobile .link-facebook img{margin-left:0}
+	.sosmed-mobile .link-instagram img{margin-left:0}
+	/*Header End*/
+	/*Slide Start*/
+	.brief-slide{left:10%;margin-top: -86.5px;}
+	.brief-slide p:first-child{font-size:24px;font-weight:300}
+	.brief-slide p a{width:155px;height:40px;line-height:40px;font-size:16px}
+	.sosmed-slide{left:10%}
+	.wrap-slide .sosmed-slide li{width:20px;height:20px}
+	.wrap-slide .link-facebook img{width:5px;margin-left:8px;margin-top:5px}
+	.wrap-slide .link-instagram img{width:11px;margin-left:5px;margin-top:5px}
+	.scroll-down-slide{width:15px;right:10%}
+	.slide{height:597px}
+	/*Slide End*/	
+	/*Home Start*/
+	.middle{width:80%;max-width:80%}
+	.container-title-portofolio{padding-top:90px}	
+	.container-title-portofolio h1{text-align:center}
+	.item-portofolio{margin-top:60px;width:calc(50% - 35px)}
+	.list-portofolio{margin-top:60px}
+	.item-portofolio:nth-child(2n+1){margin-right:70px}
+
+	.item-brief h2{font-size:20px;padding-top:20px}
+	.item-brief{height:80px;padding:0 30px}
+	.list-category-desktop{left:30px;bottom:19px;font-size:14px}
+	.list-category li a{font-size:14px}
+	.link-detail{margin-top:9px}
+	.show-all-portofolio{font-size:16px;padding-left:30px;padding-right:30px}
+	/*Home End*/
+	/*About Start*/
+	.middle-small{width:54.5%}
+	.content-page.content-tentang-kami h1{font-size:24px;padding-bottom:35px}
+	.content-page h1{padding-top:70px}
+	.table-jasa-kami{margin-top:70px;padding: 65px 0 70px;}
+	/*About End*/
+	/*Portofolio Start*/
+	.content-portofolio .list-portofolio{margin-top:40px}
+	.content-portofolio.content-gray{padding-bottom:95px}
+	
+	.list-image-portofolio{margin-left:0;margin-right:0;line-height: 90%;}
+	.content-portofolio-single .middle{width:64.45%;max-width:64.45%}
+	.title-portofolio-single{padding-top:78px}
+	.year-link{margin-bottom:40px}
+	.nav-n-share{width:64.45%;max-width:64.45%;margin-left:auto;margin-right:auto}
+	.gallery {margin-top: 14px;}
+	/*Portofolio End*/
+	/*Package Start*/
+	/*Package End*/
+	/*Term Start*/
+	/*Term End*/
+	/*FAQ Start*/
+	/*FAQ End*/
+	/*Contact Start*/
+	.content-contact h1 {padding-top: 50px;padding-bottom: 35px;}
+	.container-form-contact {width: 60% !important;max-width: 60%;border-radius: 20px !important;}
+	.container-form-contact td{display:block;width:100%}
+	.form-contact{border-right:none;border-bottom:solid 1px #eee}
+	.form-contact{padding:35px 63px 20px}
+	.field{margin-bottom:0}
+	.detail-info-contact{padding-top:45px;padding-bottom: 20px;}
+	.map{height:300px;position: relative;-webkit-transform: translate3d(0px, 0px, 0px);-webkit-mask-image: -webkit-radial-gradient(white, black);border-radius: 0 0 20px 20px;}
+	.ul-contact-info{position:absolute;top:82px;right:10%}
+	.detail-info-contact{position:relative}
+	.detail-info-contact p{max-width:58%;margin-bottom:30px}
+	.ul-contact-info li{margin-bottom:5px}
+	/*Contact End*/
+	/*Footer Start*/
+	.content-intersting p:first-child{font-size:30px;padding-top:52px;margin-bottom:25px}
+	.content-intersting.content-yellow{height:188px}
+
+	.footer{height:248px;padding-top:60px;position:relative;font-size:14px;padding-left: 10%;padding-right: 10%;}
+	.footer-1{width:35%;float:none}
+	.footer-2{width:35%;float:none;margin-top:25px;margin-left:17px}
+	.footer-3{position:absolute;top:67px;right:10%}
+	.footer h3{font-size:16px}
+	.footer-3 p{font-size:20px}
+	.footer .link_orange{font-weight:400}
+	/*Footer End*/ 
+}
+
+@media screen and (max-width: 768px){
+	/*Default Start*/
+	h1{font-size:28px}
+	.content {padding-top: 50px;}
+	/*Default End*/
+	/*Header Start*/
+	.header{padding:0 14.28%;height: 50px;}
+	.menu-mobile{margin-top:13px;height:24px}
+	.sosmed-header{margin-top:13px}
+	.menui{width:24px;margin-top:4px}
+	a.icon{height:24px}
+	.mid-menu{top:7px}
+	.bottom-menu{top:14px}
+	.top-animate{top:7px!important}
+	.bottom-animate{top:7px!important}
+
+	.state-menu-transparent .menu-header-container {margin-top: 17px;}
+	.state-menu-transparent .menu-header-container ul li a {padding-bottom: 3px;}
+	/*Header End*/
+	/*Slide Start*/
+	.slide {height: 410px;}
+	.brief-slide{left:14.28%;width:45%;margin-top:-69px}
+	.logo-header{width:170px;margin-top: 18px;background-size: 170px;}
+	.brief-slide p:first-child{font-size:20px;margin-bottom:20px}
+	.brief-slide p a{font-size:14px;width:135px}
+	ul.sosmed-slide{left:14.28%;bottom:25px}
+	.scroll-down-slide{right:14.28%;width:14px;bottom:25px}
+	/*Slide End*/
+	/*Home Start*/
+	.container-title-portofolio {padding-top: 60px;}
+	.middle{width:71.44%;max-width:71.44%}	
+	.item-portofolio{margin-top:40px;width:calc(50% - 30px)}
+	.item-portofolio:nth-child(2n+1){margin-right:60px}
+	.list-portofolio{margin-top:40px}
+	.bg{height:138px}
+	.item-brief h2{font-size:16px}
+	.item-brief{height:70px;padding:0 20px}
+	.cont-cat-link{display:none}
+	.list-category-desktop{bottom: 18px;left:20px;}
+	.show-all-portofolio{margin-top:40px}
+	.content-portofolio{padding-bottom:40px}
+	/*Home End*/	
+	/*About Start*/
+	.middle-small{width:57.2%}
+	.content-page.content-tentang-kami h1{font-size:20px;padding-bottom:23px}
+	.content-page h1{padding-top:50px}
+	.content-page p{font-size:14px}
+	.table-jasa-kami{margin-top:50px}
+	table.table-detail-jasa-kami{width:57.2%!important;max-width:57.2%!important}
+	.table-detail-jasa-kami td{display:block;width:100%;padding:40px 60px}
+.table-detail-jasa-kami td:first-child{border-right:none;border-bottom:solid 1px #eee}
+	/*About End*/
+	/*Portofolio Start*/
+	.content-portofolio h1{float:none}
+	.filter-portofolio{float:none;display:table;margin:15px auto 0}
+	.filter-portofolio li button{font-size:14px}
+	.content-portofolio .list-portofolio{margin-top:30px}
+	.content-portofolio.content-gray{padding-bottom:70px;padding-top: 50px;}
+	.list-category li a {font-size: 12px;}
+
+	.content-portofolio-single .middle{width:71.44%;max-width:71.44%}
+	.title-portofolio-single{padding-top:60px}
+	.list-category-single li a{font-size:13px}
+	.brief-portofolio{font-size:14px}
+	.year{float:none}
+	.link_website{float:none;display:table;margin-top:18px}
+	.year-link{font-size:14px;margin-bottom: 50px;}
+	.nav-n-share{width:71.44%;}
+	.gallery {margin-top: 8px;}
+	/*Portofolio End*/
+	/*Package Start*/
+	/*Package End*/
+	/*Term Start*/
+	/*Term End*/
+	/*FAQ Start*/
+	/*FAQ End*/
+	/*Contact Start*/
+	.container-form-contact {width: 71.44% !Important; max-width: 71.44%;}
+	.content-contact h1{font-size:24px}
+	.form-contact{padding:15px 35px;font-size:14px}
+	.detail-info-contact p{margin-bottom:0;font-size:14px;line-height:140%}
+	ul.ul-contact-info{position:relative;top:inherit;right:inherit;font-size:14px}
+	.label-jam{font-size:16px}
+	.detail-info-contact{padding-top:35px;padding-bottom:45px}
+	.detail-info-contact label{margin-bottom:2px}
+	.li-phone img{width:15px;margin-top:3px;margin-right:13px}
+	.li-email img{width:15px;margin-right:13px}
+	.content.content-contact {padding-bottom: 70px;}
+	/*Contact End*/
+	/*Footer Start*/
+	.content-intersting p:first-child{font-size:24px;padding-top:47px;margin-bottom:20px}
+	.btn-black{font-size:16px;padding:10px 32px}
+	.content-intersting.content-yellow{height:163px}
+	.footer{padding-left:14.28%;padding-right:14.28%;padding-top:47px}
+	.footer-3.fright{width:34%;right:14.28%;top:47px}
+	.footer-3 p{font-size:16px}
+	/*Footer End*/  
+}
+
+
+@media screen and (max-width: 640px){/*11.875% or 76.25%*/
+	/*Default Start*/
+	h1{font-size:24px}
+	/*Default End*/
+	/*Header Start*/
+	.header{padding:0 11.25%}
+	.sosmed-header li:first-child {margin-left: 0px;}
+	.sosmed-header-table {width: auto;}
+	/*Header End*/
+	/*Slide Start*/
+	.slide{height:348px}	
+	.brief-slide{left:11.25%;width:73%}
+	/*Slide End*/
+	.content-portofolio-home {padding-top: 0px;}
+	/*About Start*/
+	/*About End*/
+	/*Portofolio Start*/
+	
+	.container-title-portofolio{padding-top:50px;padding-bottom: 15px;}
+	.content-portofolio .filter-portofolio {text-align: center; line-height: 120%;}	
+	.filter-portofolio{margin-top:10px}
+	.item-portofolio{margin-right:0;width:100%;margin-top:34px}
+	.item-portofolio:nth-child(2){margin-top:34px}
+	.middle{width:76.25%;max-width:76.25%}
+	.content-portofolio .list-portofolio{margin-left:10px;margin-right:10px}
+	.bg{height:240px}
+	/*Portofolio End*/
+	/*Package Start*/
+	/*Package End*/
+	/*Term Start*/
+	/*Term End*/
+	/*FAQ Start*/
+	/*FAQ End*/
+	/*Contact Start*/
+	/*Contact End*/
+	/*Footer Start*/
+	.content-intersting p:first-child {font-size: 20px;padding-top: 40px; margin-bottom: 17px;}
+	/*Footer End*/ 
+}
+
+
+@media screen and (max-width: 480px){
+	/*Default Start*/
+	/*Default End*/
+	/*Header Start*/
+	.sosmed-header{display:none}
+	.menu-mobile {border-left: none;padding-left: 0px;}
+	.state-menu-transparent .menu-header-container{display:none}
+	.state-menu-transparent .menu-mobile{width:51px;border-width:1px;padding-left:25px;margin-left:25px}
+	.state-menu-transparent .menui{background:#fff;/* transition: background 400ms,transform 600ms cubic-bezier(.75,0,.29,1.01); */}
+	.state-menu-transparent.white-state-header .menui{background:#777}
+	.sosmed-mobile {display: block;}
+	/*Header End*/
+	/*Slide Start*/
+	
+	/*Slide End*/
+	/*About Start*/
+	.middle-small{width:80%}
+	.content-page.content-tentang-kami h1{font-size:18px;padding-bottom: 40px;}
+	.content-page h1{padding-top:45px}
+	.content-tentang-kami{font-size:13px}
+	.table-jasa-kami{margin-top:40px;padding:20px 0 8px}
+	table.table-detail-jasa-kami{width:100%!important;max-width:100%!important;border-radius:0}
+	.table-jasa-kami h2{line-height:140%;margin-bottom:20px;font-size:24px}
+	/*About End*/
+	.bg{height:138px}
+	/*Portofolio Start*/
+	.title-portofolio-single{padding-top:42px}
+	.list-category.list-category-single{margin-top:5px;margin-bottom:10px}
+	.content-portofolio-single .middle{width:80%;max-width:80%}
+	.brief-portofolio{margin-bottom:20px}
+	.link_website{margin-top:6px}
+	.year-link{margin-bottom:45px}
+	.nav-n-share{width:80%;margin-bottom:20px;margin-top:10px}
+	.gallery {margin-top: 2px;}
+	/*Portofolio End*/
+	/*Package Start*/
+	/*Package End*/
+	/*Term Start*/
+	/*Term End*/
+	/*FAQ Start*/
+	/*FAQ End*/
+	/*Contact Start*/
+	.container-form-contact{border-radius:0!important;width:100%!important;max-width:100%}
+	.content-contact h1{padding-top:43px;padding-bottom: 43px;}
+	.form-contact {padding-left: 11%;padding-right: 11%;}
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered{font-size:18px}
+	label.label-jam{font-size:14px}
+	.ul-contact-info{margin-top:15px;margin-bottom:15px}
+	.detail-info-contact label{font-size:14px}
+	.detail-info-contact{padding-bottom:35px}
+	.content.content-contact{padding-bottom:5px}
+	.form-contact{border-color:#FFD36A;border-width:2px}
+	.map {height: 190px;}
+	.g-recaptcha > div {transform: scale(0.8); margin-left: -30px;}
+	/*Contact End*/
+	/*Footer Start*/
+	.footer{height:415px}
+	.footer-3.fright{right:inherit;width:59%}
+	.footer-1{position:absolute;top: 300px;width: 60%;}
+	.footer-2{position:absolute;top: 177px;left:inherit;margin-left:0;}
+	/*Footer End*/ 
+}
+
+@media screen and (max-width: 375px){
+	/*Default Start*/
+	/*Default End*/
+	/*Header Start*/
+	/*Header End*/
+	/*Slide Start*/
+	.sosmed-slide {display: none;}
+	.scroll-down-slide {display: none;}
+	/*Slide End*/
+	/*About Start*/
+	/*About End*/
+	/*Portofolio Start*/
+	/*Portofolio End*/
+	/*Package Start*/
+	/*Package End*/
+	/*Term Start*/
+	/*Term End*/
+	/*FAQ Start*/
+	/*FAQ End*/
+	/*Contact Start*/
+	/*Contact End*/
+	/*Footer Start*/
+	.footer-3.fright{width:220px}
+	.footer b.orange{font-weight:400}
+	.footer-2{top:195px;}
+	.footer-1{top:310px}
+	/*Footer End*/ 
+}
+
+@media screen and (max-width: 320px){
+	/*Default Start*/
+	/*Default End*/
+	/*Header Start*/
+	/*Header End*/
+	/*Slide Start*/
+	/*Slide End*/
+	/*About Start*/
+	/*About End*/
+	/*Portofolio Start*/
+	/*Portofolio End*/
+	/*Package Start*/
+	/*Package End*/
+	/*Term Start*/
+	/*Term End*/
+	/*FAQ Start*/
+	/*FAQ End*/
+	/*Contact Start*/
+	/*Contact End*/
+	/*Footer Start*/
+	/*Footer End*/ 
+}

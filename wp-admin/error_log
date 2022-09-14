@@ -1,0 +1,1 @@
+[02-Feb-2017 22:46:20 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'RecapchaPage' does not have a method 'print_section_info' in /home/briedalc/public_html/wp-admin/includes/template.php on line 1297

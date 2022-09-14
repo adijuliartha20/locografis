@@ -1,0 +1,6 @@
+# BEGIN W3TC Page Cache cache
+AddDefaultCharset UTF-8
+<IfModule mod_headers.c>
+    Header unset Last-Modified
+</IfModule>
+# END W3TC Page Cache cache
